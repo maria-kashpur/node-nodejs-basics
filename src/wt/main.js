@@ -19,7 +19,7 @@ const performCalculations = async (incrementalNumber, length) => {
         })
       );
 
-      worker.on("erroe", (data) =>
+      worker.on("error", (data) =>
         resolve({
           status: "error",
           data: null,
